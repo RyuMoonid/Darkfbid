@@ -273,8 +273,8 @@ def pilih_super():
 			asw=json.loads(r.text)
 			print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mNama group \033[1;91m:\033[1;97m "+asw['name']
 		except KeyError:
-			print"\033[1;96m[!] \x1b[1;91mGroup tidak ditemukan"
-			raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
+			print"\033[1;96m[!] \x1b[1;91mCracking"
+			raw_input("\n\033[1;96m[\033[1;97mCracking\033[1;96m]")
 			super()
 		jalan('\033[1;96m[✺] \033[1;93mMengambil ID \033[1;97m...')
 		re=requests.get('https://graph.facebook.com/'+idg+'/members?fields=name,id&limit=999999999&access_token='+toket)
